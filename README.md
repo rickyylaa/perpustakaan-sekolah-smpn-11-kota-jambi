@@ -57,12 +57,13 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 6. Download dan Import Database
+### 6. Migrate dan Seeder
 
-Download file database dengan link berikut (contoh):
+Jalankan perintah berikut untuk melakukan migrasi ulang dan langsung mengeksekusi seeder:
 
 ```bash
-drive link-to-database-file
+php artisan migrate
+php artisan migrate:fresh --seed
 ```
 
 ### 7. Jalankan Server
